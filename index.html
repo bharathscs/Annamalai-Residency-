@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Annamalai Residency — Viluppuram</title>
+<meta name="description" content="Hotel Annamalai Residency, Chennai Bypass Road, Viluppuram. South Indian, North Indian & Chinese vegetarian restaurant with comfortable rooms. Near Villupuram Junction.">
+<style>
+:root{
+  --maroon:#6b1f1f;
+  --maroon-dark:#4a1212;
+  --gold:#c9a227;
+  --gold-soft:#e6cf8a;
+  --cream:#f7f1e3;
+  --ink:#2b2118;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family: Georgia,'Times New Roman',serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.7;
+}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--maroon-dark)}
+img{max-width:100%;display:block}
+
+/* ---------- Top ribbon ---------- */
+.ribbon{
+  background:var(--maroon-dark);
+  color:var(--gold-soft);
+  text-align:center;
+  font-size:.85rem;
+  letter-spacing:.12em;
+  padding:8px 12px;
+  text-transform:uppercase;
+}
+
+/* ---------- Header / Nav ---------- */
+header{
+  background:var(--maroon);
+  border-bottom:3px solid var(--gold);
+  position:sticky;top:0;z-index:50;
+  box-shadow:0 3px 12px rgba(0,0,0,.25);
+}
+.nav{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .emblem{
+  width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-size:1.35rem;font-weight:bold;background:var(--maroon-dark);
+}
+.brand-name{color:#fff;font-size:1.25rem;letter-spacing:.05em}
+.brand-name small{display:block;color:var(--gold-soft);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase}
+nav ul{display:flex;gap:26px;list-style:none;flex-wrap:wrap}
+nav a{
+  color:#f3e9d2;text-decoration:none;font-size:.95rem;letter-spacing:.08em;
+  text-transform:uppercase;transition:color .25s;
+}
+nav a:hover{color:var(--gold)}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  background:linear-gradient(rgba(30,10,10,.55),rgba(30,10,10,.55)),url('assets/hotel.jpg') center 30%/cover no-repeat;
+  min-height:88vh;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:#fff;
+}
+.hero-inner{padding:60px 20px;max-width:820px}
+.hero .est{font-size:.8rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:14px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);color:#fff;letter-spacing:.03em;margin-bottom:10px}
+.hero .tagline{font-style:italic;color:var(--gold-soft);font-size:1.15rem;margin-bottom:28px}
+.btn{
+  display:inline-block;padding:13px 34px;margin:6px;
+  border:2px solid var(--gold);color:#fff;text-decoration:none;
+  letter-spacing:.15em;text-transform:uppercase;font-size:.85rem;
+  transition:all .3s;background:transparent;
+}
+.btn.solid{background:var(--gold);color:var(--maroon-dark);font-weight:bold}
+.btn:hover{background:var(--gold);color:var(--maroon-dark)}
+
+/* ---------- Sections ---------- */
+section{padding:80px 20px}
+.wrap{max-width:1100px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:50px}
+.sec-head .kicker{color:var(--gold);letter-spacing:.35em;text-transform:uppercase;font-size:.78rem}
+.sec-head h2{font-size:2.2rem;margin:8px 0 6px}
+.ornament{color:var(--gold);font-size:1.2rem;letter-spacing:.4em}
+.sec-head p{color:#6b5a45;max-width:640px;margin:10px auto 0;font-style:italic}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-grid img{border:6px solid #fff;box-shadow:0 8px 28px rgba(0,0,0,.18)}
+.about-grid p{margin-bottom:16px}
+.stats{display:flex;gap:30px;margin-top:24px;flex-wrap:wrap}
+.stat{border-left:3px solid var(--gold);padding-left:14px}
+.stat b{font-size:1.5rem;color:var(--maroon);display:block}
+.stat span{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#7a6a52}
+
+/* ---------- Menu ---------- */
+#menu{background:var(--maroon-dark);color:#efe4c8}
+#menu h2{color:var(--gold-soft)}
+.menu-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:36px}
+.menu-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(201,162,39,.35);
+  padding:30px 26px;
+}
+.menu-card h3{
+  color:var(--gold);font-size:1.2rem;letter-spacing:.12em;text-transform:uppercase;
+  border-bottom:1px solid rgba(201,162,39,.4);padding-bottom:12px;margin-bottom:16px;
+  text-align:center;
+}
+.menu-card ul{list-style:none}
+.menu-card li{
+  display:flex;justify-content:space-between;gap:14px;
+  padding:7px 0;font-size:.95rem;
+}
+.menu-card li span:last-child{color:var(--gold-soft);white-space:nowrap}
+.menu-note{text-align:center;margin-top:34px;font-style:italic;color:#cbb98a}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.gallery figure{
+  position:relative;overflow:hidden;border:6px solid #fff;
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+.gallery img{width:100%;height:260px;object-fit:cover;transition:transform .5s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(40,15,15,.85));
+  color:#fff;padding:28px 14px 10px;font-size:.9rem;letter-spacing:.06em;text-align:center;
+}
+
+/* ---------- Visit ---------- */
+#visit{background:#f1e7cf}
+.visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.visit-card{
+  background:#fff;border-top:4px solid var(--gold);
+  padding:30px 26px;box-shadow:0 4px 14px rgba(0,0,0,.08);text-align:center;
+}
+.visit-card h3{margin-bottom:12px;font-size:1.15rem}
+.visit-card p{font-size:.95rem;color:#5a4b38}
+.visit-card .ico{font-size:1.8rem;margin-bottom:10px}
+.visit-card a{color:var(--maroon);text-decoration:none;border-bottom:1px dashed var(--gold)}
+.map-frame{
+  margin-top:44px;border:6px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.15);
+}
+.map-frame iframe{width:100%;height:360px;border:0;display:block}
+
+/* ---------- Footer ---------- */
+footer{background:var(--maroon-dark);color:#d8c9a3;text-align:center;padding:44px 20px 30px}
+footer .brand-name{margin-bottom:6px}
+footer .foot-nav{margin:14px 0}
+footer .foot-nav a{color:var(--gold-soft);text-decoration:none;margin:0 12px;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+footer .fine{font-size:.8rem;color:#9c8a63;border-top:1px solid rgba(201,162,39,.25);padding-top:18px;margin-top:18px;max-width:700px;margin-left:auto;margin-right:auto}
+
+@media(max-width:760px){
+  .about-grid{grid-template-columns:1fr}
+  nav ul{gap:14px;margin-top:10px}
+  section{padding:56px 16px}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon">✦ Chennai Bypass Road · Viluppuram · Near Villupuram Junction (1.9 km) ✦</div>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="emblem">அ</div>
+      <div class="brand-name">Hotel Annamalai Residency
+        <small>Viluppuram · Hotel &amp; Restaurant</small>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="est">A Traditional Welcome Awaits</div>
+    <h1>Hotel Annamalai Residency</h1>
+    <div class="tagline">" Comfort, Cuisine &amp; Classic Tamil Hospitality on the Chennai Bypass "</div>
+    <a class="btn solid" href="tel:+919443441161">📞 +91 94434 41161</a>
+    <a class="btn" href="#menu">View Our Menu</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Our Story</div>
+      <h2>Welcome to Annamalai Residency</h2>
+      <div class="ornament">❖ ❖ ❖</div>
+      <p>Conveniently located on Chennai Bypass Road near ES Engineering College, we have been a trusted halt for travellers and a favourite dining spot for families of Viluppuram.</p>
+    </div>
+    <div class="about-grid">
+      <img src="assets/hotel.jpg" alt="Hotel Annamalai Residency, Viluppuram">
+      <div>
+        <p>Whether you are passing through on the bypass, arriving at Villupuram Junction just 1.9 km away, or looking for a wholesome family meal, Hotel Annamalai Residency offers clean, comfortable accommodation and a multi-cuisine restaurant under one roof.</p>
+        <p>Our kitchen serves time-honoured South Indian favourites on fresh banana leaf, hearty North Indian curries, Indo-Chinese delights, and a full selection of rice, biryani, snacks and beverages.</p>
+        <div class="stats">
+          <div class="stat"><b>1.9 km</b><span>Villupuram Junction</span></div>
+          <div class="stat"><b>3 Cuisines</b><span>South · North · Chinese</span></div>
+          <div class="stat"><b>Hotel +</b><span>Family Restaurant</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker" style="color:var(--gold)">Taste of Tradition</div>
+      <h2>Our Menu</h2>
+      <div class="ornament">❖ ❖ ❖</div>
+      <p>From crisp ghee roasts and banana-leaf meals to fragrant fried rice — something for every palate.</p>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-card">
+        <h3>South Indian</h3>
+        <ul>
+          <li><span>Ghee Roast Dosa</span><span>₹ —</span></li>
+          <li><span>Masala Dosa</span><span>₹ —</span></li>
+          <li><span>Idli · Vada · Pongal</span><span>₹ —</span></li>
+          <li><span>Meals on Banana Leaf</span><span>₹ —</span></li>
+          <li><span>Parotta · Kurma</span><span>₹ —</span></li>
+          <li><span>Sambar / Chutney Varieties</span><span>₹ —</span></li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <h3>Rice &amp; Biryani</h3>
+        <ul>
+          <li><span>Veg Fried Rice</span><span>₹ —</span></li>
+          <li><span>Paneer Fried Rice</span><span>₹ —</span></li>
+          <li><span>Tomato / Lemon Rice</span><span>₹ —</span></li>
+          <li><span>Vegetable Biryani</span><span>₹ —</span></li>
+          <li><span>Curd Rice · Bisibelebath</span><span>₹ —</span></li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <h3>North Indian</h3>
+        <ul>
+          <li><span>Chapati · Naan · Roti</span><span>₹ —</span></li>
+          <li><span>Paneer Butter Masala</span><span>₹ —</span></li>
+          <li><span>Veg Kurma · Dal Tadka</span><span>₹ —</span></li>
+          <li><span>Chana Masala</span><span>₹ —</span></li>
+          <li><span>Jeera Rice · Pulao</span><span>₹ —</span></li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <h3>Chinese · Snacks · Beverages</h3>
+        <ul>
+          <li><span>Veg Noodles · Manchurian</span><span>₹ —</span></li>
+          <li><span>Gobi Chilli · Fried Rice</span><span>₹ —</span></li>
+          <li><span>Masala Puri · Bonda</span><span>₹ —</span></li>
+          <li><span>Filter Coffee · Tea</span><span>₹ —</span></li>
+          <li><span>Fresh Juices · Milk Shakes</span><span>₹ —</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-note">✦ Full menu with prices available at the restaurant · Family dining hall &amp; takeaway available ✦</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">A Feast for the Eyes</div>
+      <h2>Gallery</h2>
+      <div class="ornament">❖ ❖ ❖</div>
+    </div>
+    <div class="gallery">
+      <figure><img src="assets/interior.jpg" alt="Restaurant dining hall"><figcaption>Our Family Dining Hall</figcaption></figure>
+      <figure><img src="assets/dosa.jpg" alt="Ghee roast dosa with chutneys and sambar"><figcaption>Ghee Roast with Chutneys &amp; Sambar</figcaption></figure>
+      <figure><img src="assets/leafmeal.jpg" alt="Traditional meal on banana leaf"><figcaption>Traditional Banana Leaf Meal</figcaption></figure>
+      <figure><img src="assets/frice1.jpg" alt="Vegetable fried rice"><figcaption>Veg Fried Rice</figcaption></figure>
+      <figure><img src="assets/frice2.jpg" alt="Paneer fried rice"><figcaption>Paneer Fried Rice</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Find Us</div>
+      <h2>Visit Us</h2>
+      <div class="ornament">❖ ❖ ❖</div>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <div class="ico">📍</div>
+        <h3>Address</h3>
+        <p>Chennai Bypass Road,<br>Near ES Engineering College,<br>Viluppuram, Tamil Nadu</p>
+      </div>
+      <div class="visit-card">
+        <div class="ico">📞</div>
+        <h3>Reservations</h3>
+        <p>Call us for room booking<br>&amp; group dining<br><a href="tel:+919443441161">+91 94434 41161</a></p>
+      </div>
+      <div class="visit-card">
+        <div class="ico">🚆</div>
+        <h3>Getting Here</h3>
+        <p>Villupuram Junction — 1.9 km<br>On Chennai Bypass Road<br>Easy parking for cars &amp; buses</p>
+      </div>
+      <div class="visit-card">
+        <div class="ico">⭐</div>
+        <h3>Rated by Guests</h3>
+        <p>3.7 / 5 average rating<br>from traveller reviews<br>Hotel + Multi-cuisine Restaurant</p>
+      </div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=Hotel+Annamalai+Residency+Viluppuram&output=embed" loading="lazy" title="Map to Hotel Annamalai Residency"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand-name">Hotel Annamalai Residency</div>
+  <div style="color:var(--gold-soft);letter-spacing:.3em;font-size:.72rem;text-transform:uppercase">Viluppuram · Est. with Tradition</div>
+  <div class="foot-nav">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit Us</a>
+  </div>
+  <div class="fine">Chennai Bypass Road, Near ES Engineering College, Viluppuram · 📞 +91 94434 41161 · 🚆 1.9 km from Villupuram Junction<br>© Hotel Annamalai Residency. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
